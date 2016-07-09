@@ -1,7 +1,9 @@
 Joelsantanate!
 ------------
 
-Uma palhinha do very very rich vocabulário of nosso caro Joel Santan
+Uma palhinha do very very rich vocabulário of nosso caro Joel.
+
+(Heavily inspirêitedi no https://github.com/cv/portunhol.js)
 
 https://github.com/steffencrespo/joelsantanes.js
 
@@ -10,7 +12,7 @@ Instaleiti:
 
     npm install -g joelsantanes
 
-Como usar
+Como usar:
 ---------
 
 CLI:
