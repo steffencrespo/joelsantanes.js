@@ -1,9 +1,9 @@
-Joelsantanate! [![Build Status](https://travis-ci.org/cv/portunhol.js.png)](https://travis-ci.org/cv/portunhol.js)
+Joelsantanate!
 ------------
 
-Uma palhida do very very rich vocabulário of nosso caro Joel Santan
+Uma palhinha do very very rich vocabulário of nosso caro Joel Santan
 
-https://github.com/cv/portunhol.js
+https://github.com/steffencrespo/joelsantanes.js
 
 Instaleiti:
 -----------
@@ -15,15 +15,15 @@ Como usar
 
 CLI:
 
-    $ echo 'onde estão minhas calças?' | portunhol
-    donde están mis pantalones?
+    $ echo 'para esquerda para direita pro meio de atrás' joelsantanes
+    di lefiti di raiti di midiu frlom blihaindiu
 
 Biblioteca:
 
-    var p = require('portunhol');
-    p.portunholate('onde estão minhas calças?'); // "donde están mis pantalones?"
+    var p = require('joelsantanes');
+    p.joelsantanate('para esquerda para direita pro meio de atrás'); // "di lefiti di raiti di midiu frlom blihaindiu"
 
-Licenzla
+Licença
 --------
 
-Ver el arquivo LICENSE
+Luki di arquivo LICENSE
