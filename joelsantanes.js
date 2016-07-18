@@ -38,7 +38,7 @@ var regexps = [
   [/\bviaj(a|o)(r|rem)\b/gi, "tráviliu"],
 
   [/\b(\w{3,}?)ão\b/gi, "$1ión"],
-  [/\to\s/gi, " tchú "],
+  [/\sto\s/gi, " tchú "],
   [/\svocê\s/gi, " iú "],
   [/\bfazer\b/gi, "mêki"],
   [/\b(a|o)\b/gi, "di"],
