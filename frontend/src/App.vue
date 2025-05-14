@@ -21,19 +21,10 @@
 
 <script setup>
 import { ref } from 'vue'
+import joelify from './joelify'
 
 const inputText = ref('')
 const outputText = ref('')
-
-function joelify(text) {
-  // Mock básico de "sotaque Joel Santana"
-  return text
-    .replace(/team/gi, 'tchim')
-    .replace(/play/gi, 'plei')
-    .replace(/focus/gi, 'fócãs')
-    .replace(/very/gi, 'véry')
-    .replace(/good/gi, 'gudji') + ', you know?'
-}
 
 function translate() {
   // Mock: usa o próprio texto como se fosse traduzido e Joelizado
