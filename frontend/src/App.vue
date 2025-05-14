@@ -1,25 +1,26 @@
 <template>
   <div class="max-w-2xl w-full p-6 bg-gray-800 rounded-xl shadow-lg">
-    <h1 class="text-2xl font-bold mb-4">Joel Santanês Translator</h1>
+    <h1 class="text-2xl font-bold mb-4 text-center">Joel Santanês Translator</h1>
     <textarea
       v-model="inputText"
       class="w-full p-3 rounded bg-gray-700 text-white mb-4"
       rows="4"
       placeholder="Digite sua frase em português..."
     ></textarea>
-    <button
-      @click="translate"
-      class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded mb-4"
-    >
-      Traduzir
-    </button>
-    <button
-        @click="speak"
-        class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded ml-2"
-        :disabled="!outputText"
-    >
-      🔊 Ouvir Joel
-    </button>
+    <div class="flex gap-2 mb-4 flex-col md:flex-row">
+      <button
+          @click="translate"
+          class="w-full md:w-1/2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded"
+      >
+        Traduzir
+      </button>
+      <button
+          @click="speak"
+          class="w-full md:w-1/2 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded"
+      >
+        🔊 Ouvir Joel
+      </button>
+    </div>
     <div v-if="outputText" class="bg-gray-700 p-3 rounded">
       <p>{{ outputText }}</p>
     </div>
@@ -49,7 +50,12 @@ function translate() {
 }
 
 function speak() {
-  if (!outputText.value) return;
+  if (!outputText.value && inputText.value.trim()) {
+    const translated = inputText.value
+    outputText.value = joelify(translated)
+  }
+
+  if (!outputText.value) return
 
   const utterance = new SpeechSynthesisUtterance(outputText.value);
 
