@@ -1,6 +1,9 @@
 <template>
   <div class="max-w-2xl w-full p-6 bg-gray-800 rounded-xl shadow-lg">
     <h1 class="text-2xl font-bold mb-4 text-center">Joel Santanês Translator</h1>
+    <p class="text-center italic text-gray-400 mb-6">
+      “Very goodi, very smarti. Esse app é só pra rir, you know?”
+    </p>
     <textarea
       v-model="inputText"
       class="w-full p-3 rounded bg-gray-700 text-white mb-4"
@@ -24,6 +27,11 @@
     <div v-if="outputText" class="bg-gray-700 p-3 rounded">
       <p>{{ outputText }}</p>
     </div>
+    <footer class="mt-8 text-xs text-center text-gray-500">
+      Este projeto é uma paródia e homenagem ao lendário técnico Joel Santana. <br />
+      Não possui afiliação com o Sr. Joel Santana ou entidades relacionadas.<br />
+      Todos os conteúdos são gerados de forma humorística e educativa.
+    </footer>
   </div>
 </template>
 

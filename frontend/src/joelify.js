@@ -86,6 +86,7 @@ const regexps = [
     // Tempo e datas
     [/\bhoje\b/gi, "tchudê"],
     [/\bontem\b/gi, "iéixterdê"],
+    [/\bamanhã\b/gi, "txumórow"],
     [/\bcedo\b/gi, "véri cedo"],
 
     // Extras e expressões
